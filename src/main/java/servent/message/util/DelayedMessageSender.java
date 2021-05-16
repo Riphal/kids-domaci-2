@@ -17,7 +17,7 @@ import java.net.Socket;
  */
 public class DelayedMessageSender implements Runnable {
 
-	private Message messageToSend;
+	private final Message messageToSend;
 	
 	public DelayedMessageSender(Message messageToSend) {
 		this.messageToSend = messageToSend;

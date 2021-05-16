@@ -42,9 +42,7 @@ public class AppConfig {
 	 * </ul>
 	 */
 	public static SnapshotType SNAPSHOT_TYPE;
-	
-	public static Object colorLock = new Object();
-	
+
 	/**
 	 * Print a message to stdout with a timestamp
 	 * @param message message to print

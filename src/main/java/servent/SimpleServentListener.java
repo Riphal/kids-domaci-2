@@ -73,8 +73,6 @@ public class SimpleServentListener implements Runnable, Cancellable {
 				case NAIVE_TELL_AMOUNT:
 					messageHandler = new NaiveTellAmountHandler(clientMessage, snapshotCollector);
 					break;
-				case POISON:
-					break;
 				}
 				
 				threadPool.submit(messageHandler);
