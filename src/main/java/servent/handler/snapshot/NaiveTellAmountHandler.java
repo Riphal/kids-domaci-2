@@ -21,7 +21,6 @@ public class NaiveTellAmountHandler implements MessageHandler {
 		if (clientMessage.getMessageType() == MessageType.NAIVE_TELL_AMOUNT) {
 			int neighborAmount = Integer.parseInt(clientMessage.getMessageText());
 
-			AppConfig.timestampedStandardPrint("Added to snapshotCollector: " + clientMessage.getOriginalSenderInfo().getId() + "|" + neighborAmount);
 			snapshotCollector.addNaiveSnapshotInfo(
 					"node"+String.valueOf(clientMessage.getOriginalSenderInfo().getId()), neighborAmount);
 		} else {

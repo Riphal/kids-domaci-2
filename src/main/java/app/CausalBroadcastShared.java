@@ -110,8 +110,6 @@ public class CausalBroadcastShared {
 					Message pendingMessage = iterator.next();
 					BasicMessage basicMessage = (BasicMessage)pendingMessage;
 
-					AppConfig.timestampedStandardPrint("myVectorClock: " + myVectorClock);
-					AppConfig.timestampedStandardPrint("senderVectorClock: " + basicMessage.getSenderVectorClock());
 					if (!otherClockGreater(myVectorClock, basicMessage.getSenderVectorClock())) {
 						gotWork = true;
 
