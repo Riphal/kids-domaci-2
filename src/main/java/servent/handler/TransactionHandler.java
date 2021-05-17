@@ -19,7 +19,7 @@ public class TransactionHandler implements MessageHandler {
 	public void run() {
 		if (clientMessage.getMessageType() == MessageType.TRANSACTION) {
 			String amountString = clientMessage.getMessageText();
-			
+
 			int amountNumber = 0;
 			try {
 				amountNumber = Integer.parseInt(amountString);
@@ -27,7 +27,7 @@ public class TransactionHandler implements MessageHandler {
 				AppConfig.timestampedErrorPrint("Couldn't parse amount: " + amountString);
 				return;
 			}
-			
+
 			bitcakeManager.addSomeBitcakes(amountNumber);
 		} else {
 			AppConfig.timestampedErrorPrint("Transaction handler got: " + clientMessage);

@@ -18,7 +18,7 @@ public class NullHandler implements MessageHandler {
 	
 	@Override
 	public void run() {
-		AppConfig.timestampedErrorPrint("Couldn't handle message: " + clientMessage);
+//		AppConfig.timestampedErrorPrint("Couldn't handle message: " + clientMessage);
 	}
 
 }

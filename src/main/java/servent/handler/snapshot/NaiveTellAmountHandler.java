@@ -8,8 +8,8 @@ import servent.message.MessageType;
 
 public class NaiveTellAmountHandler implements MessageHandler {
 
-	private Message clientMessage;
-	private SnapshotCollector snapshotCollector;
+	private final Message clientMessage;
+	private final SnapshotCollector snapshotCollector;
 	
 	public NaiveTellAmountHandler(Message clientMessage, SnapshotCollector snapshotCollector) {
 		this.clientMessage = clientMessage;
@@ -21,6 +21,7 @@ public class NaiveTellAmountHandler implements MessageHandler {
 		if (clientMessage.getMessageType() == MessageType.NAIVE_TELL_AMOUNT) {
 			int neighborAmount = Integer.parseInt(clientMessage.getMessageText());
 
+			AppConfig.timestampedStandardPrint("Added to snapshotCollector: " + clientMessage.getOriginalSenderInfo().getId() + "|" + neighborAmount);
 			snapshotCollector.addNaiveSnapshotInfo(
 					"node"+String.valueOf(clientMessage.getOriginalSenderInfo().getId()), neighborAmount);
 		} else {

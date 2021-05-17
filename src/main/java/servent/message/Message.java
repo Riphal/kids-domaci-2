@@ -4,6 +4,7 @@ import app.ServentInfo;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
 /**
  * This is your basic message. It should cover most needs.
@@ -37,6 +38,12 @@ public interface Message extends Serializable {
 	 * on this object, this attribute will not be changed.
 	 */
 	ServentInfo getOriginalSenderInfo();
+
+	/**
+	 * Information about the original receiver. If <code>makeMeASender</code> is invoked
+	 * on this object, this attribute will not be changed.
+	 */
+	ServentInfo getOriginalReceiverInfo();
 	
 	/**
 	 * If a servent uses <code>makeMeASender</code> when resending a message, it will
@@ -84,5 +91,6 @@ public interface Message extends Serializable {
 	 * we are sending the message.
 	 */
 	void sendEffect();
-	
+
+	Map<Integer, Integer> getSenderVectorClock();
 }

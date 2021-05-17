@@ -4,7 +4,6 @@ import app.AppConfig;
 import app.Cancellable;
 import app.snapshot_bitcake.SnapshotCollector;
 import servent.handler.*;
-import servent.handler.snapshot.*;
 import servent.message.Message;
 import servent.message.util.MessageUtil;
 
@@ -12,6 +11,9 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
+import java.util.Collections;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -20,7 +22,10 @@ public class SimpleServentListener implements Runnable, Cancellable {
 	private volatile boolean working = true;
 	
 	private final SnapshotCollector snapshotCollector;
-	
+
+	private final Set<Message> receivedBroadcasts = Collections.newSetFromMap(new ConcurrentHashMap<Message, Boolean>());
+	private final Object pendingMessagesLock = new Object();
+
 	public SimpleServentListener(SnapshotCollector snapshotCollector) {
 		this.snapshotCollector = snapshotCollector;
 	}
@@ -56,25 +61,8 @@ public class SimpleServentListener implements Runnable, Cancellable {
 				//GOT A MESSAGE! <3
 				clientMessage = MessageUtil.readMessage(clientSocket);
 
-				MessageHandler messageHandler = new NullHandler(clientMessage);
-				
-				/*
-				 * Each message type has it's own handler.
-				 * If we can get away with stateless handlers, we will,
-				 * because that way is much simpler and less error prone.
-				 */
-				switch (clientMessage.getMessageType()) {
-				case TRANSACTION:
-					messageHandler = new TransactionHandler(clientMessage, snapshotCollector.getBitcakeManager());
-					break;
-				case NAIVE_ASK_AMOUNT:
-					messageHandler = new NaiveAskAmountHandler(clientMessage, snapshotCollector.getBitcakeManager());
-					break;
-				case NAIVE_TELL_AMOUNT:
-					messageHandler = new NaiveTellAmountHandler(clientMessage, snapshotCollector);
-					break;
-				}
-				
+				MessageHandler messageHandler = new CausalBrodcastHandler(clientMessage, snapshotCollector, receivedBroadcasts, pendingMessagesLock);
+
 				threadPool.submit(messageHandler);
 			} catch (SocketTimeoutException timeoutEx) {
 				//Uncomment the next line to see that we are waking up every second.

@@ -1,6 +1,7 @@
 package app.snapshot_bitcake;
 
 import app.AppConfig;
+import app.CausalBroadcastShared;
 import servent.message.Message;
 import servent.message.snapshot.NaiveAskAmountMessage;
 import servent.message.util.MessageUtil;
@@ -77,14 +78,26 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 			//1 send asks
 			switch (snapshotType) {
 			case NAIVE:
-				Message askMessage = new NaiveAskAmountMessage(AppConfig.myServentInfo, null);
+				Map<Integer, Integer> vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
+
+				Message askMessage = new NaiveAskAmountMessage(
+						AppConfig.myServentInfo,
+						null,
+						null,
+						vectorClock
+				);
 				
 				for (Integer neighbor : AppConfig.myServentInfo.getNeighbors()) {
 					askMessage = askMessage.changeReceiver(neighbor);
 					
 					MessageUtil.sendMessage(askMessage);
 				}
+
 				collectedNaiveValues.put("node"+AppConfig.myServentInfo.getId(), bitcakeManager.getCurrentBitcakeAmount());
+
+				// Increment clock for original sender
+				CausalBroadcastShared.incrementClock(AppConfig.myServentInfo.getId());
+
 				break;
 			case NONE:
 				//Shouldn't be able to come here. See constructor. 
@@ -128,7 +141,7 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 				}
 				
 				AppConfig.timestampedStandardPrint("System bitcake count: " + sum);
-				
+
 				collectedNaiveValues.clear(); //reset for next invocation
 				break;
 			case NONE:

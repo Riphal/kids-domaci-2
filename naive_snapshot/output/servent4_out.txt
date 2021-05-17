@@ -1,183 +1,337 @@
-19:38:06 - Starting servent [4|localhost|1500]
-19:38:07 - Pausing for 1000 ms
-19:38:08 - Pausing for 25000 ms
-19:38:09 - Sending message [4|0||NAIVE_ASK_AMOUNT|0]
-19:38:10 - Got message [0|179|9|TRANSACTION|4]
-19:38:10 - Got message [0|95|1|TRANSACTION|4]
-19:38:10 - Got message [0|94|2|TRANSACTION|4]
-19:38:10 - Got message [0|79|1|TRANSACTION|4]
-19:38:10 - Got message [0|90|2|TRANSACTION|4]
-19:38:10 - Got message [0|199|3|TRANSACTION|4]
-19:38:10 - Got message [0|128|9|TRANSACTION|4]
-19:38:10 - Got message [0|32|8|TRANSACTION|4]
-19:38:10 - Got message [0|132|3|TRANSACTION|4]
-19:38:10 - Got message [0|195|2|TRANSACTION|4]
-19:38:10 - Got message [0|147|5|TRANSACTION|4]
-19:38:10 - Got message [0|124|2|TRANSACTION|4]
-19:38:10 - Got message [0|122|4|TRANSACTION|4]
-19:38:10 - Got message [0|65|6|TRANSACTION|4]
-19:38:10 - Got message [0|98|8|TRANSACTION|4]
-19:38:10 - Got message [0|25|1|TRANSACTION|4]
-19:38:10 - Got message [0|27|7|TRANSACTION|4]
-19:38:10 - Got message [0|101|8|TRANSACTION|4]
-19:38:10 - Got message [0|46|9|TRANSACTION|4]
-19:38:10 - Got message [0|86|7|TRANSACTION|4]
-19:38:10 - Got message [0|24|9|TRANSACTION|4]
-19:38:10 - Got message [0|156|10|TRANSACTION|4]
-19:38:10 - Got message [0|141|2|TRANSACTION|4]
-19:38:10 - Got message [0|53|10|TRANSACTION|4]
-19:38:10 - Got message [0|82|4|TRANSACTION|4]
-19:38:10 - Got message [0|172|2|TRANSACTION|4]
-19:38:10 - Got message [0|168|4|TRANSACTION|4]
-19:38:10 - Got message [0|162|7|TRANSACTION|4]
-19:38:10 - Sending message [4|0||NAIVE_ASK_AMOUNT|2]
-19:38:10 - Got message [0|107|2|TRANSACTION|4]
-19:38:10 - Got message [0|194|1|TRANSACTION|4]
-19:38:10 - Got message [0|150|8|TRANSACTION|4]
-19:38:10 - Sending message [4|0||NAIVE_ASK_AMOUNT|3]
-19:38:10 - Got message [0|198|10|TRANSACTION|4]
-19:38:10 - Got message [0|38|7|TRANSACTION|4]
-19:38:10 - Got message [0|133|4|TRANSACTION|4]
-19:38:10 - Got message [0|164|7|TRANSACTION|4]
-19:38:10 - Got message [0|63|5|TRANSACTION|4]
-19:38:10 - Got message [0|73|1|TRANSACTION|4]
-19:38:10 - Got message [0|119|2|TRANSACTION|4]
-19:38:10 - Got message [0|153|6|TRANSACTION|4]
-19:38:10 - Got message [0|37|7|TRANSACTION|4]
-19:38:10 - Got message [0|171|2|TRANSACTION|4]
-19:38:10 - Got message [0|30|1|TRANSACTION|4]
-19:38:10 - Got message [0|170|7|TRANSACTION|4]
-19:38:10 - Got message [0|68|6|TRANSACTION|4]
-19:38:10 - Sending message [4|0||NAIVE_ASK_AMOUNT|1]
-19:38:10 - Got message [0|178|5|TRANSACTION|4]
-19:38:10 - Got message [0|193|10|TRANSACTION|4]
-19:38:10 - Got message [0|50|6|TRANSACTION|4]
-19:38:11 - Got message [1|45|5|TRANSACTION|4]
-19:38:11 - Got message [1|124|6|TRANSACTION|4]
-19:38:11 - Got message [1|172|2|TRANSACTION|4]
-19:38:11 - Got message [1|130|3|TRANSACTION|4]
-19:38:11 - Got message [1|36|6|TRANSACTION|4]
-19:38:11 - Got message [1|16|1|TRANSACTION|4]
-19:38:11 - Got message [1|187|7|TRANSACTION|4]
-19:38:11 - Got message [1|75|2|TRANSACTION|4]
-19:38:11 - Got message [1|145|3|TRANSACTION|4]
-19:38:11 - Got message [1|186|7|TRANSACTION|4]
-19:38:11 - Got message [1|48|2|TRANSACTION|4]
-19:38:11 - Got message [1|71|9|TRANSACTION|4]
-19:38:11 - Got message [1|185|6|TRANSACTION|4]
-19:38:11 - Got message [1|34|4|TRANSACTION|4]
-19:38:11 - Got message [1|95|7|TRANSACTION|4]
-19:38:11 - Got message [1|88|10|TRANSACTION|4]
-19:38:11 - Got message [1|138|10|TRANSACTION|4]
-19:38:11 - Got message [1|169|4|TRANSACTION|4]
-19:38:11 - Got message [1|166|10|TRANSACTION|4]
-19:38:11 - Got message [1|192|1|TRANSACTION|4]
-19:38:11 - Got message [1|53|10|TRANSACTION|4]
-19:38:11 - Got message [1|199|3|TRANSACTION|4]
-19:38:11 - Got message [1|90|5|TRANSACTION|4]
-19:38:11 - Got message [1|62|7|TRANSACTION|4]
-19:38:11 - Got message [1|31|6|TRANSACTION|4]
-19:38:11 - Got message [1|101|5|TRANSACTION|4]
-19:38:11 - Got message [1|122|10|TRANSACTION|4]
-19:38:11 - Got message [1|197|2|TRANSACTION|4]
-19:38:11 - Got message [1|33|9|TRANSACTION|4]
-19:38:11 - Got message [1|164|3|TRANSACTION|4]
-19:38:11 - Got message [1|112|3|TRANSACTION|4]
-19:38:11 - Got message [1|29|4|TRANSACTION|4]
-19:38:11 - Got message [1|133|8|TRANSACTION|4]
-19:38:11 - Got message [1|195|2|TRANSACTION|4]
-19:38:11 - Got message [1|93|7|TRANSACTION|4]
-19:38:11 - Got message [1|107|3|TRANSACTION|4]
-19:38:11 - Got message [1|104|3|TRANSACTION|4]
-19:38:11 - Got message [1|127|3|TRANSACTION|4]
-19:38:11 - Got message [1|99|2|TRANSACTION|4]
-19:38:11 - Got message [1|171|1|TRANSACTION|4]
-19:38:11 - Got message [1|153|9|TRANSACTION|4]
-19:38:11 - Got message [1|158|4|TRANSACTION|4]
-19:38:11 - Got message [1|162|7|TRANSACTION|4]
-19:38:11 - Got message [1|58|6|TRANSACTION|4]
-19:38:11 - Got message [1|59|9|TRANSACTION|4]
-19:38:11 - Got message [1|30|9|TRANSACTION|4]
-19:38:11 - Got message [1|188|10|TRANSACTION|4]
-19:38:11 - Got message [1|156|3|TRANSACTION|4]
-19:38:11 - Got message [1|64|10|TRANSACTION|4]
-19:38:11 - Got message [1|96|8|TRANSACTION|4]
-19:38:11 - Got message [0|41|7|TRANSACTION|4]
-19:38:11 - Got message [0|197|9|TRANSACTION|4]
-19:38:11 - Got message [0|113|10|TRANSACTION|4]
-19:38:11 - Got message [2|27|7|TRANSACTION|4]
-19:38:11 - Got message [2|94|3|TRANSACTION|4]
-19:38:11 - Got message [2|167|7|TRANSACTION|4]
-19:38:11 - Got message [2|58|9|TRANSACTION|4]
-19:38:11 - Got message [2|144|2|TRANSACTION|4]
-19:38:11 - Got message [2|131|2|TRANSACTION|4]
-19:38:11 - Got message [2|111|5|TRANSACTION|4]
-19:38:11 - Got message [2|196|5|TRANSACTION|4]
-19:38:11 - Got message [2|190|7|TRANSACTION|4]
-19:38:11 - Got message [2|114|5|TRANSACTION|4]
-19:38:11 - Got message [2|97|6|TRANSACTION|4]
-19:38:11 - Got message [2|46|4|TRANSACTION|4]
-19:38:11 - Got message [2|72|1|TRANSACTION|4]
-19:38:11 - Got message [2|42|1|TRANSACTION|4]
-19:38:11 - Got message [2|80|3|TRANSACTION|4]
-19:38:11 - Got message [2|61|5|TRANSACTION|4]
-19:38:11 - Got message [2|191|5|TRANSACTION|4]
-19:38:11 - Got message [2|53|9|TRANSACTION|4]
-19:38:11 - Got message [2|57|8|TRANSACTION|4]
-19:38:11 - Got message [2|163|5|TRANSACTION|4]
-19:38:11 - Got message [2|143|6|TRANSACTION|4]
-19:38:11 - Got message [2|118|7|TRANSACTION|4]
-19:38:11 - Got message [2|48|1|TRANSACTION|4]
-19:38:11 - Got message [2|128|2|TRANSACTION|4]
-19:38:11 - Got message [2|16|7|TRANSACTION|4]
-19:38:11 - Got message [2|188|3|TRANSACTION|4]
-19:38:11 - Got message [2|96|1|TRANSACTION|4]
-19:38:11 - Got message [2|93|2|TRANSACTION|4]
-19:38:11 - Got message [2|177|2|TRANSACTION|4]
-19:38:11 - Got message [2|106|5|TRANSACTION|4]
-19:38:11 - Got message [2|186|3|TRANSACTION|4]
-19:38:11 - Got message [2|91|6|TRANSACTION|4]
-19:38:11 - Got message [2|152|6|TRANSACTION|4]
-19:38:11 - Got message [2|120|4|TRANSACTION|4]
-19:38:11 - Got message [2|138|4|TRANSACTION|4]
-19:38:11 - Got message [2|56|1|TRANSACTION|4]
-19:38:11 - Got message [2|67|2|TRANSACTION|4]
-19:38:11 - Got message [2|153|8|TRANSACTION|4]
-19:38:11 - Got message [2|90|3|TRANSACTION|4]
-19:38:11 - Got message [2|166|3|TRANSACTION|4]
-19:38:11 - Got message [2|185|2|TRANSACTION|4]
-19:38:11 - Got message [2|19|8|TRANSACTION|4]
-19:38:11 - Got message [2|87|9|TRANSACTION|4]
-19:38:11 - Got message [2|7|10|TRANSACTION|4]
-19:38:11 - Got message [2|25|5|TRANSACTION|4]
-19:38:11 - Got message [2|109|2|TRANSACTION|4]
-19:38:11 - Got message [2|199|8|TRANSACTION|4]
-19:38:11 - Got message [2|169|1|TRANSACTION|4]
-19:38:11 - Got message [2|162|10|TRANSACTION|4]
-19:38:11 - Got message [2|168|3|TRANSACTION|4]
-19:38:12 - Got message [1|200|321|NAIVE_TELL_AMOUNT|4]
-19:38:12 - Got message [3|0|1599|NAIVE_TELL_AMOUNT|4]
-19:38:12 - Got message [2|200|493|NAIVE_TELL_AMOUNT|4]
-19:38:12 - Got message [0|200|166|NAIVE_TELL_AMOUNT|4]
-19:38:14 - Info for node4 = 1000 bitcake
-19:38:14 - Info for node2 = 493 bitcake
-19:38:14 - Info for node3 = 1599 bitcake
-19:38:14 - Info for node0 = 166 bitcake
-19:38:14 - Info for node1 = 321 bitcake
-19:38:14 - System bitcake count: 3579
-19:38:33 - Pausing for 10000 ms
-19:38:33 - Sending message [4|1||NAIVE_ASK_AMOUNT|3]
-19:38:34 - Sending message [4|1||NAIVE_ASK_AMOUNT|0]
-19:38:34 - Sending message [4|1||NAIVE_ASK_AMOUNT|2]
-19:38:34 - Sending message [4|1||NAIVE_ASK_AMOUNT|1]
-19:38:34 - Got message [3|1|1783|NAIVE_TELL_AMOUNT|4]
-19:38:34 - Got message [0|201|438|NAIVE_TELL_AMOUNT|4]
-19:38:35 - Got message [1|201|509|NAIVE_TELL_AMOUNT|4]
-19:38:35 - Got message [2|201|493|NAIVE_TELL_AMOUNT|4]
-19:38:37 - Info for node4 = 1777 bitcake
-19:38:37 - Info for node2 = 493 bitcake
-19:38:37 - Info for node3 = 1783 bitcake
-19:38:37 - Info for node0 = 438 bitcake
-19:38:37 - Info for node1 = 509 bitcake
-19:38:37 - System bitcake count: 5000
-19:38:43 - Stopping...
+13:31:00 - Starting servent [4|localhost|1500]
+13:31:00 - Pausing for 1000 ms
+13:31:00 - Got message [1|4|2|TRANSACTION|4]
+13:31:00 - myVectorClock: {0=0, 1=0, 2=0, 3=0, 4=0}
+13:31:00 - senderVectorClock: {0=0, 1=3, 2=0, 3=0, 4=0}
+13:31:00 - Got message [1|2|4|TRANSACTION|4]
+13:31:00 - myVectorClock: {0=0, 1=0, 2=0, 3=0, 4=0}
+13:31:00 - senderVectorClock: {0=0, 1=3, 2=0, 3=0, 4=0}
+13:31:00 - myVectorClock: {0=0, 1=0, 2=0, 3=0, 4=0}
+13:31:00 - senderVectorClock: {0=0, 1=0, 2=0, 3=0, 4=0}
+13:31:00 - Committing [1|2|4|TRANSACTION|4]
+13:31:00 - myVectorClock: {0=0, 1=1, 2=0, 3=0, 4=0}
+13:31:00 - senderVectorClock: {0=0, 1=3, 2=0, 3=0, 4=0}
+13:31:01 - Got message [1|8|2|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=1, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=3, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=1, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=6, 2=0, 3=0, 4=0}
+13:31:01 - Got message [1|6|2|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=1, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=3, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=1, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=6, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=1, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=4, 2=0, 3=0, 4=0}
+13:31:01 - Got message [1|0|3|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=1, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=3, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=1, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=6, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=1, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=4, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=1, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=0, 2=0, 3=0, 4=0}
+13:31:01 - Committing [1|0|3|TRANSACTION|4]
+13:31:01 - Start collecting bitcake_info
+13:31:01 - myVectorClock: {0=0, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=3, 2=0, 3=0, 4=0}
+13:31:01 - Pausing for 14000 ms
+13:31:01 - myVectorClock: {0=0, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=6, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=4, 2=0, 3=0, 4=0}
+13:31:01 - Got message [1|1|3|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=3, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=6, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=4, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=0, 2=0, 3=0, 4=0}
+13:31:01 - Committing [1|1|3|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=3, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=3, 2=0, 3=0, 4=0}
+13:31:01 - Committing [1|4|2|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=4, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=6, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=4, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=4, 2=0, 3=0, 4=0}
+13:31:01 - Committing [1|6|2|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=5, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=6, 2=0, 3=0, 4=0}
+13:31:01 - Got message [1|3|2|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=5, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=6, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=5, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=3, 2=0, 3=0, 4=0}
+13:31:01 - Committing [1|3|2|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=6, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=6, 2=0, 3=0, 4=0}
+13:31:01 - Committing [1|8|2|TRANSACTION|4]
+13:31:01 - Got message [1|7|1|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=7, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=5, 2=0, 3=0, 4=0}
+13:31:01 - Committing [1|7|1|TRANSACTION|4]
+13:31:01 - Got message [1|5|5|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=8, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=3, 2=0, 3=0, 4=0}
+13:31:01 - Committing [1|5|5|TRANSACTION|4]
+13:31:01 - Got message [0|3|1|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=9, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - Got message [0|4|2|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=9, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=9, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - Got message [0|0|5|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=0, 1=9, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=9, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=0, 1=9, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=0, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - Committing [0|0|5|TRANSACTION|4]
+13:31:01 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=0}
+13:31:01 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:01 - Got message [0|5|4|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=0}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=0}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=0}
+13:31:02 - senderVectorClock: {0=4, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Got message [0|7|5|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=4, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=7, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Got message [0|1|5|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=4, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=7, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=1, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=0, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Committing [0|1|5|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=4, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=7, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Got message [0|6|5|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=4, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=7, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=5, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Got message [0|8|3|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=4, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=7, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=5, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=8, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Got message [0|2|2|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=4, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=7, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=5, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=8, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=2, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=0, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Committing [0|2|2|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=3, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Committing [0|3|1|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=4, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=3, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Committing [0|4|2|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=5, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=4, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Committing [0|5|4|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=6, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=7, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=6, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=5, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Committing [0|6|5|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=7, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=7, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Committing [0|7|5|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=8, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=8, 1=2, 2=0, 3=0, 4=0}
+13:31:02 - Committing [0|8|3|TRANSACTION|4]
+13:31:02 - Got message [2|5|5|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=9, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:02 - Got message [2|2|3|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=9, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=9, 1=9, 2=0, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=2, 1=9, 2=0, 3=0, 4=0}
+13:31:02 - Committing [2|2|3|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=9, 1=9, 2=1, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:02 - Got message [2|1|2|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=9, 1=9, 2=1, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=9, 1=9, 2=1, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=2, 1=9, 2=0, 3=0, 4=0}
+13:31:02 - Committing [2|1|2|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=9, 1=9, 2=2, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:02 - Got message [2|4|4|TRANSACTION|4]
+13:31:02 - myVectorClock: {0=9, 1=9, 2=2, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:02 - myVectorClock: {0=9, 1=9, 2=2, 3=0, 4=1}
+13:31:02 - senderVectorClock: {0=2, 1=9, 2=4, 3=0, 4=0}
+13:31:02 - Sending message [4|0||NAIVE_ASK_AMOUNT|1]
+13:31:03 - Got message [2|6|4|TRANSACTION|4]
+13:31:03 - myVectorClock: {0=9, 1=9, 2=2, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:03 - myVectorClock: {0=9, 1=9, 2=2, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=4, 3=0, 4=0}
+13:31:03 - myVectorClock: {0=9, 1=9, 2=2, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:03 - Got message [2|0|3|TRANSACTION|4]
+13:31:03 - myVectorClock: {0=9, 1=9, 2=2, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:03 - myVectorClock: {0=9, 1=9, 2=2, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=4, 3=0, 4=0}
+13:31:03 - myVectorClock: {0=9, 1=9, 2=2, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:03 - myVectorClock: {0=9, 1=9, 2=2, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=0, 3=0, 4=0}
+13:31:03 - Committing [2|0|3|TRANSACTION|4]
+13:31:03 - myVectorClock: {0=9, 1=9, 2=3, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:03 - myVectorClock: {0=9, 1=9, 2=3, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=4, 3=0, 4=0}
+13:31:03 - myVectorClock: {0=9, 1=9, 2=3, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:03 - Got message [2|3|4|TRANSACTION|4]
+13:31:03 - myVectorClock: {0=9, 1=9, 2=3, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:03 - myVectorClock: {0=9, 1=9, 2=3, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=4, 3=0, 4=0}
+13:31:03 - myVectorClock: {0=9, 1=9, 2=3, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:03 - myVectorClock: {0=9, 1=9, 2=3, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=3, 3=0, 4=0}
+13:31:03 - Committing [2|3|4|TRANSACTION|4]
+13:31:03 - myVectorClock: {0=9, 1=9, 2=4, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:03 - myVectorClock: {0=9, 1=9, 2=4, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=4, 3=0, 4=0}
+13:31:03 - Committing [2|4|4|TRANSACTION|4]
+13:31:03 - myVectorClock: {0=9, 1=9, 2=5, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:03 - Committing [2|5|5|TRANSACTION|4]
+13:31:03 - myVectorClock: {0=9, 1=9, 2=6, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=5, 3=0, 4=0}
+13:31:03 - Committing [2|6|4|TRANSACTION|4]
+13:31:03 - Sending message [4|0||NAIVE_ASK_AMOUNT|0]
+13:31:03 - Sending message [4|0||NAIVE_ASK_AMOUNT|3]
+13:31:03 - Got message [2|7|3|TRANSACTION|4]
+13:31:03 - myVectorClock: {0=9, 1=9, 2=7, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=7, 3=0, 4=0}
+13:31:03 - Committing [2|7|3|TRANSACTION|4]
+13:31:03 - Sending message [4|0||NAIVE_ASK_AMOUNT|2]
+13:31:03 - Got message [2|8|2|TRANSACTION|4]
+13:31:03 - myVectorClock: {0=9, 1=9, 2=8, 3=0, 4=1}
+13:31:03 - senderVectorClock: {0=2, 1=9, 2=8, 3=0, 4=0}
+13:31:03 - Committing [2|8|2|TRANSACTION|4]
+13:31:04 - Got message [1|9|981|NAIVE_TELL_AMOUNT|4]
+13:31:04 - myVectorClock: {0=9, 1=9, 2=9, 3=0, 4=1}
+13:31:04 - senderVectorClock: {0=9, 1=9, 2=1, 3=0, 4=1}
+13:31:04 - Committing [1|9|981|NAIVE_TELL_AMOUNT|4]
+13:31:04 - Added to snapshotCollector: 1|981
+13:31:04 - Got message [2|9|991|NAIVE_TELL_AMOUNT|4]
+13:31:04 - myVectorClock: {0=9, 1=10, 2=9, 3=0, 4=1}
+13:31:04 - senderVectorClock: {0=9, 1=9, 2=9, 3=0, 4=1}
+13:31:04 - Committing [2|9|991|NAIVE_TELL_AMOUNT|4]
+13:31:04 - Added to snapshotCollector: 2|991
+13:31:04 - Got message [0|9|975|NAIVE_TELL_AMOUNT|4]
+13:31:04 - myVectorClock: {0=9, 1=10, 2=10, 3=0, 4=1}
+13:31:04 - senderVectorClock: {0=9, 1=9, 2=6, 3=0, 4=1}
+13:31:04 - Committing [0|9|975|NAIVE_TELL_AMOUNT|4]
+13:31:04 - Added to snapshotCollector: 0|975
+13:31:04 - Got message [3|0|1007|NAIVE_TELL_AMOUNT|4]
+13:31:04 - myVectorClock: {0=10, 1=10, 2=10, 3=0, 4=1}
+13:31:04 - senderVectorClock: {0=9, 1=9, 2=2, 3=0, 4=1}
+13:31:04 - Committing [3|0|1007|NAIVE_TELL_AMOUNT|4]
+13:31:04 - Added to snapshotCollector: 3|1007
+13:31:06 - Info for node4 = 1010 bitcake
+13:31:06 - Info for node2 = 991 bitcake
+13:31:06 - Info for node3 = 1007 bitcake
+13:31:06 - Info for node0 = 975 bitcake
+13:31:06 - Info for node1 = 981 bitcake
+13:31:06 - System bitcake count: 4964
+13:31:15 - Start collecting bitcake_info
+13:31:15 - Pausing for 15000 ms
+13:31:16 - Sending message [4|1||NAIVE_ASK_AMOUNT|2]
+13:31:16 - Sending message [4|1||NAIVE_ASK_AMOUNT|1]
+13:31:17 - Sending message [4|1||NAIVE_ASK_AMOUNT|0]
+13:31:17 - Sending message [4|1||NAIVE_ASK_AMOUNT|3]
+13:31:17 - Got message [2|10|991|NAIVE_TELL_AMOUNT|4]
+13:31:17 - myVectorClock: {0=10, 1=10, 2=10, 3=1, 4=2}
+13:31:17 - senderVectorClock: {0=10, 1=10, 2=10, 3=1, 4=2}
+13:31:17 - Committing [2|10|991|NAIVE_TELL_AMOUNT|4]
+13:31:17 - Added to snapshotCollector: 2|991
+13:31:17 - Got message [1|10|989|NAIVE_TELL_AMOUNT|4]
+13:31:17 - myVectorClock: {0=10, 1=10, 2=11, 3=1, 4=2}
+13:31:17 - senderVectorClock: {0=10, 1=10, 2=10, 3=1, 4=2}
+13:31:17 - Committing [1|10|989|NAIVE_TELL_AMOUNT|4]
+13:31:17 - Added to snapshotCollector: 1|989
+13:31:18 - Got message [0|10|975|NAIVE_TELL_AMOUNT|4]
+13:31:18 - myVectorClock: {0=10, 1=11, 2=11, 3=1, 4=2}
+13:31:18 - senderVectorClock: {0=10, 1=10, 2=10, 3=1, 4=2}
+13:31:18 - Committing [0|10|975|NAIVE_TELL_AMOUNT|4]
+13:31:18 - Added to snapshotCollector: 0|975
+13:31:18 - Got message [3|1|1013|NAIVE_TELL_AMOUNT|4]
+13:31:18 - myVectorClock: {0=11, 1=11, 2=11, 3=1, 4=2}
+13:31:18 - senderVectorClock: {0=10, 1=10, 2=10, 3=1, 4=2}
+13:31:18 - Committing [3|1|1013|NAIVE_TELL_AMOUNT|4]
+13:31:18 - Added to snapshotCollector: 3|1013
+13:31:20 - Info for node4 = 1032 bitcake
+13:31:20 - Info for node2 = 991 bitcake
+13:31:20 - Info for node3 = 1013 bitcake
+13:31:20 - Info for node0 = 975 bitcake
+13:31:20 - Info for node1 = 989 bitcake
+13:31:20 - System bitcake count: 5000
+13:31:30 - {0=11, 1=11, 2=11, 3=2, 4=2}
+13:31:30 - 1032
+13:31:30 - Stopping...

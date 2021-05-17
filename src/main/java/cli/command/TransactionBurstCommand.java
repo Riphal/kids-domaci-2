@@ -1,22 +1,27 @@
 package cli.command;
 
 import app.AppConfig;
+import app.CausalBroadcastShared;
 import app.ServentInfo;
-import app.snapshot_bitcake.BitcakeManager;
+
+import app.snapshot_bitcake.SnapshotCollector;
 import servent.message.Message;
 import servent.message.TransactionMessage;
 import servent.message.util.MessageUtil;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 public class TransactionBurstCommand implements CLICommand {
 
-	private static final int TRANSACTION_COUNT = 5;
-	private static final int BURST_WORKERS = 10;
-	private static final int MAX_TRANSFER_AMOUNT = 10;
+	private static final int TRANSACTION_COUNT = 3;
+	private static final int BURST_WORKERS = 3;
+	private static final int MAX_TRANSFER_AMOUNT = 5;
 	
-	private final BitcakeManager bitcakeManager;
+	private final SnapshotCollector snapshotCollector;
 	
-	public TransactionBurstCommand(BitcakeManager bitcakeManager) {
-		this.bitcakeManager = bitcakeManager;
+	public TransactionBurstCommand(SnapshotCollector snapshotCollector) {
+		this.snapshotCollector = snapshotCollector;
 	}
 	
 	private class TransactionBurstWorker implements Runnable {
@@ -24,22 +29,34 @@ public class TransactionBurstCommand implements CLICommand {
 		@Override
 		public void run() {
 			for (int i = 0; i < TRANSACTION_COUNT; i++) {
-				for (int neighbor : AppConfig.myServentInfo.getNeighbors()) {
-					ServentInfo neighborInfo = AppConfig.getInfoById(neighbor);
-					
-					int amount = 1 + (int)(Math.random() * MAX_TRANSFER_AMOUNT);
-					
-					/*
-					 * The message itself will reduce our bitcake count as it is being sent.
-					 * The sending might be delayed, so we want to make sure we do the
-					 * reducing at the right time, not earlier.
-					 */
-					Message transactionMessage = new TransactionMessage(
-							AppConfig.myServentInfo, neighborInfo, amount, bitcakeManager);
-					
-					MessageUtil.sendMessage(transactionMessage);
+				ServentInfo receiverInfo = AppConfig.getInfoById((int)(Math.random() * AppConfig.getServentCount()));
+
+				while (receiverInfo.getId() == AppConfig.myServentInfo.getId()) {
+					receiverInfo = AppConfig.getInfoById((int)(Math.random() * AppConfig.getServentCount()));
 				}
-				
+
+				int amount = 1 + (int)(Math.random() * MAX_TRANSFER_AMOUNT);
+
+				Map<Integer, Integer> vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
+
+				Message transactionMessage = new TransactionMessage(
+						AppConfig.myServentInfo,
+						receiverInfo,
+						null,
+						vectorClock,
+						amount,
+						snapshotCollector.getBitcakeManager()
+				);
+
+				for (int neighbor : AppConfig.myServentInfo.getNeighbors()) {
+					//Same message, different receiver, and add us to the route table.
+					MessageUtil.sendMessage(transactionMessage.changeReceiver(neighbor).makeMeASender());
+				}
+
+				// reduce our bitcake count then send the message
+				transactionMessage.sendEffect();
+
+				CausalBroadcastShared.commitCausalMessage(transactionMessage);
 			}
 		}
 	}

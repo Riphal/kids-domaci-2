@@ -28,7 +28,6 @@ public class DelayedMessageSender implements Runnable {
 		 * A random sleep before sending.
 		 * It is important to take regular naps for health reasons.
 		 */
-		messageToSend.sendEffect();
 
 		try {
 			Thread.sleep((long)(Math.random() * 1000) + 500);
