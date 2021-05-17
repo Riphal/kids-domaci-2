@@ -105,7 +105,8 @@ public class MultipleServentStarter {
 	}
 	
 	public static void main(String[] args) {
-		startServentTest("naive_snapshot");
+//		startServentTest("naive_snapshot");
+		startServentTest("acharya_badrinath_snapshot");
 	}
 
 }

@@ -26,7 +26,6 @@ public class NaiveTellAmountHandler implements MessageHandler {
 		} else {
 			AppConfig.timestampedErrorPrint("Tell amount handler got: " + clientMessage);
 		}
-
 	}
 
 }

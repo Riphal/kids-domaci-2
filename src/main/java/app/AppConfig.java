@@ -116,6 +116,8 @@ public class AppConfig {
 
 		if ("naive".equals(snapshotType)) {
 			SNAPSHOT_TYPE = SnapshotType.NAIVE;
+		} else if ("acharya_badrinath".equals(snapshotType)) {
+			SNAPSHOT_TYPE = SnapshotType.ACHARYA_BADRINATH;
 		} else {
 			timestampedErrorPrint("Problem reading snapshot algorithm. Defaulting to NONE.");
 			SNAPSHOT_TYPE = SnapshotType.NONE;

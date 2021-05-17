@@ -1,6 +1,8 @@
 package servent.handler;
 
 import app.AppConfig;
+import app.CausalBroadcastShared;
+import app.snapshot_bitcake.AcharyaBadrinathManager;
 import app.snapshot_bitcake.BitcakeManager;
 import servent.message.Message;
 import servent.message.MessageType;
@@ -26,6 +28,10 @@ public class TransactionHandler implements MessageHandler {
 			} catch (NumberFormatException e) {
 				AppConfig.timestampedErrorPrint("Couldn't parse amount: " + amountString);
 				return;
+			}
+
+			if (bitcakeManager instanceof AcharyaBadrinathManager) {
+				CausalBroadcastShared.addReceivedTransaction(clientMessage);
 			}
 
 			bitcakeManager.addSomeBitcakes(amountNumber);

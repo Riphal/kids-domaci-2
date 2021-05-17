@@ -1,16 +1,15 @@
 package app;
 
-import app.snapshot_bitcake.BitcakeManager;
 import app.snapshot_bitcake.SnapshotCollector;
 import servent.handler.MessageHandler;
 import servent.handler.NullHandler;
 import servent.handler.TransactionHandler;
+import servent.handler.snapshot.AcharyaBadrinathAskAmountHandler;
+import servent.handler.snapshot.AcharyaBadrinathTellAmountHandler;
 import servent.handler.snapshot.NaiveAskAmountHandler;
 import servent.handler.snapshot.NaiveTellAmountHandler;
 import servent.message.BasicMessage;
 import servent.message.Message;
-import servent.message.snapshot.NaiveTellAmountMessage;
-import servent.message.util.MessageUtil;
 
 import java.util.*;
 import java.util.concurrent.*;
@@ -35,7 +34,11 @@ public class CausalBroadcastShared {
 	private static final Object pendingMessagesLock = new Object();
 	private static SnapshotCollector snapshotCollector;
 
-	private static final Set<String> receivedNaiveAsk = Collections.newSetFromMap(new ConcurrentHashMap<String, Boolean>());
+	private static final List<Message> sendTransactions = new CopyOnWriteArrayList<>();
+	private static final List<Message> receivedTransactions = new CopyOnWriteArrayList<>();
+
+	private static final Set<Message> receivedNaiveAsk = Collections.newSetFromMap(new ConcurrentHashMap<Message, Boolean>());
+	private static final Set<Message> receivedAcharyaBadrinathAsk = Collections.newSetFromMap(new ConcurrentHashMap<Message, Boolean>());
 
 	/*
 	 * Thread pool for executing the handlers. Each client will get it's own handler thread.
@@ -48,6 +51,22 @@ public class CausalBroadcastShared {
 
 	public static SnapshotCollector getSnapshotCollector() {
 		return snapshotCollector;
+	}
+
+	public static void addReceivedTransaction(Message receivedTransaction) {
+		receivedTransactions.add(receivedTransaction);
+	}
+
+	public static List<Message> getReceivedTransactions() {
+		return receivedTransactions;
+	}
+
+	public static void addSendTransaction(Message sendTransaction) {
+		sendTransactions.add(sendTransaction);
+	}
+
+	public static List<Message> getSendTransactions() {
+		return sendTransactions;
 	}
 
 	public static void initializeVectorClock(int serventCount) {
@@ -119,6 +138,7 @@ public class CausalBroadcastShared {
 
 						MessageHandler messageHandler = new NullHandler(basicMessage);
 
+						boolean didPut;
 						switch (basicMessage.getMessageType()) {
 							case TRANSACTION:
 								if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId()) {
@@ -126,7 +146,7 @@ public class CausalBroadcastShared {
 								}
 								break;
 							case NAIVE_ASK_AMOUNT:
-								boolean didPut = receivedNaiveAsk.add(basicMessage.getOriginalSenderInfo().getId() + ":" + AppConfig.myServentInfo.getId() + ":" + basicMessage.getMessageId());
+								didPut = receivedNaiveAsk.add(basicMessage);
 
 								if (didPut) {
 									messageHandler = new NaiveAskAmountHandler(basicMessage, snapshotCollector);
@@ -135,6 +155,18 @@ public class CausalBroadcastShared {
 							case NAIVE_TELL_AMOUNT:
 								if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId()) {
 									messageHandler = new NaiveTellAmountHandler(basicMessage, snapshotCollector);
+								}
+								break;
+							case ACHARYA_BADRINATH_ASK_AMOUNT:
+								didPut = receivedAcharyaBadrinathAsk.add(basicMessage);
+
+								if (didPut) {
+									messageHandler = new AcharyaBadrinathAskAmountHandler(basicMessage, snapshotCollector);
+								}
+								break;
+							case ACHARYA_BADRINATH_TELL_AMOUNT:
+								if (basicMessage.getOriginalReceiverInfo().getId() == AppConfig.myServentInfo.getId()) {
+									messageHandler = new AcharyaBadrinathTellAmountHandler(basicMessage, snapshotCollector);
 								}
 								break;
 						}

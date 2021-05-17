@@ -1,5 +1,5 @@
 package app.snapshot_bitcake;
 
 public enum SnapshotType {
-	NAIVE, NONE
+	NAIVE, ACHARYA_BADRINATH, NONE
 }

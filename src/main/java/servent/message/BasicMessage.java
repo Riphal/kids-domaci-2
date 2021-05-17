@@ -180,7 +180,7 @@ public class BasicMessage implements Message {
 	public String toString() {
 		return "[" + getOriginalSenderInfo().getId() + "|" + getMessageId() + "|" +
 					getMessageText() + "|" + getMessageType() + "|" +
-				(getReceiverInfo() != null ? getReceiverInfo().getId() : null) + "]";
+				(getOriginalReceiverInfo() != null ? getOriginalReceiverInfo().getId() : null) + "]";
 	}
 
 	/**

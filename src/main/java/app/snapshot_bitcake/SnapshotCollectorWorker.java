@@ -3,6 +3,7 @@ package app.snapshot_bitcake;
 import app.AppConfig;
 import app.CausalBroadcastShared;
 import servent.message.Message;
+import servent.message.snapshot.AcharyaBadrinathAskAmountMessage;
 import servent.message.snapshot.NaiveAskAmountMessage;
 import servent.message.util.MessageUtil;
 
@@ -10,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
@@ -26,6 +28,7 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 	private final AtomicBoolean collecting = new AtomicBoolean(false);
 	
 	private final Map<String, Integer> collectedNaiveValues = new ConcurrentHashMap<>();
+	private final Map<String, Object[]> collectedAcharyaBadrinathValues = new ConcurrentHashMap<>();
 
 	private SnapshotType snapshotType = SnapshotType.NAIVE;
 	
@@ -36,6 +39,7 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 
 		switch (snapshotType) {
 			case NAIVE -> bitcakeManager = new NaiveBitcakeManager();
+			case ACHARYA_BADRINATH -> bitcakeManager = new AcharyaBadrinathManager();
 			case NONE -> {
 				AppConfig.timestampedErrorPrint("Making snapshot collector without specifying type. Exiting...");
 				System.exit(0);
@@ -67,6 +71,9 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 					return;
 				}
 			}
+
+			Map<Integer, Integer> vectorClock;
+			Message askMessage;
 			
 			/*
 			 * Collecting is done in three stages:
@@ -78,9 +85,9 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 			//1 send asks
 			switch (snapshotType) {
 			case NAIVE:
-				Map<Integer, Integer> vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
+				vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
 
-				Message askMessage = new NaiveAskAmountMessage(
+				askMessage = new NaiveAskAmountMessage(
 						AppConfig.myServentInfo,
 						null,
 						null,
@@ -99,6 +106,35 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 				CausalBroadcastShared.incrementClock(AppConfig.myServentInfo.getId());
 
 				break;
+
+			case ACHARYA_BADRINATH:
+				vectorClock = new ConcurrentHashMap<>(CausalBroadcastShared.getVectorClock());
+
+				askMessage = new AcharyaBadrinathAskAmountMessage(
+						AppConfig.myServentInfo,
+						null,
+						null,
+						vectorClock
+				);
+
+				for (Integer neighbor : AppConfig.myServentInfo.getNeighbors()) {
+					askMessage = askMessage.changeReceiver(neighbor);
+
+					MessageUtil.sendMessage(askMessage);
+				}
+
+
+				addAcharyaBadrinathSnapshotInfo(
+					"node"+AppConfig.myServentInfo.getId(),
+					bitcakeManager.getCurrentBitcakeAmount(),
+					CausalBroadcastShared.getSendTransactions(),
+					CausalBroadcastShared.getReceivedTransactions()
+				);
+
+				// Increment clock for original sender
+				CausalBroadcastShared.incrementClock(AppConfig.myServentInfo.getId());
+				break;
+
 			case NONE:
 				//Shouldn't be able to come here. See constructor. 
 				break;
@@ -113,9 +149,16 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 						waiting = false;
 					}
 					break;
-				case NONE:
-					//Shouldn't be able to come here. See constructor. 
+
+				case ACHARYA_BADRINATH:
+					if (collectedAcharyaBadrinathValues.size() == AppConfig.getServentCount()) {
+						waiting = false;
+					}
 					break;
+
+				case NONE:
+				//Shouldn't be able to come here. See constructor.
+				break;
 				}
 				
 				try {
@@ -144,6 +187,48 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 
 				collectedNaiveValues.clear(); //reset for next invocation
 				break;
+
+			case ACHARYA_BADRINATH:
+				sum = 0;
+				for (Entry<String, Object[]> itemAmount : collectedAcharyaBadrinathValues.entrySet()) {
+					Object[] payload = itemAmount.getValue();
+
+					int totalAmount = (int) payload[0];
+					List<Message> sendTransactions = (List<Message>) payload[1];
+
+					sum += totalAmount;
+					AppConfig.timestampedStandardPrint(
+							"Info for " + itemAmount.getKey() + " = " + totalAmount + " bitcake");
+
+
+					for (Message sendTransaction : sendTransactions) {
+						payload = collectedAcharyaBadrinathValues.get("node" + sendTransaction.getOriginalReceiverInfo().getId());
+						List<Message> receivedTransactions = (List<Message>) payload[2];
+
+						boolean exist = false;
+						for (Message receivedTransaction : receivedTransactions) {
+							if (sendTransaction.getMessageId() == receivedTransaction.getMessageId()) {
+								exist = true;
+								break;
+							}
+						}
+
+						if (!exist) {
+							AppConfig.timestampedStandardPrint(
+									"Info for unprocessed transaction: " + sendTransaction.getMessageText() + " bitcake");
+
+							int amountNumber = Integer.parseInt(sendTransaction.getMessageText());
+
+							sum += amountNumber;
+						}
+					}
+				}
+
+				AppConfig.timestampedStandardPrint("System bitcake count: " + sum);
+
+				collectedAcharyaBadrinathValues.clear(); //reset for next invocation
+				break;
+
 			case NONE:
 				//Shouldn't be able to come here. See constructor. 
 				break;
@@ -156,6 +241,22 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 	@Override
 	public void addNaiveSnapshotInfo(String snapshotSubject, int amount) {
 		collectedNaiveValues.put(snapshotSubject, amount);
+	}
+
+	@Override
+	public void addAcharyaBadrinathSnapshotInfo(String snapshotSubject, int amount,
+				List<Message> sendTransactions, List<Message> receivedTransactions) {
+
+		List<Message> sendTrx = new CopyOnWriteArrayList<>(sendTransactions);
+		List<Message> receivedTrx = new CopyOnWriteArrayList<>(receivedTransactions);
+
+		Object[] payload = new Object[]{
+				amount,
+				sendTrx,
+				receivedTrx
+		};
+
+		collectedAcharyaBadrinathValues.put(snapshotSubject, payload);
 	}
 
 	@Override

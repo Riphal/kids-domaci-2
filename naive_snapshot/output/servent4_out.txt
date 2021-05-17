@@ -1,167 +1,167 @@
-15:32:38 - Starting servent [4|localhost|1500]
-15:32:38 - Pausing for 1000 ms
-15:32:39 - Start collecting bitcake_info
-15:32:39 - Pausing for 14000 ms
-15:32:39 - Got message [1|2|3|TRANSACTION|4]
-15:32:39 - Committing [1|2|3|TRANSACTION|4]
-15:32:39 - Rebroadcasting... 1
-15:32:39 - Got message [1|5|4|TRANSACTION|4]
-15:32:39 - Rebroadcasting... 2
-15:32:40 - Got message [1|8|4|TRANSACTION|4]
-15:32:40 - Rebroadcasting... 3
-15:32:40 - Got message [1|1|2|TRANSACTION|4]
-15:32:40 - Committing [1|1|2|TRANSACTION|4]
-15:32:40 - Rebroadcasting... 4
-15:32:40 - Got message [1|3|2|TRANSACTION|4]
-15:32:40 - Committing [1|3|2|TRANSACTION|4]
-15:32:40 - Committing [1|5|4|TRANSACTION|4]
-15:32:40 - Rebroadcasting... 5
-15:32:40 - Got message [1|6|5|TRANSACTION|4]
-15:32:40 - Committing [1|6|5|TRANSACTION|4]
-15:32:40 - Rebroadcasting... 6
-15:32:40 - Got message [1|0|2|TRANSACTION|4]
-15:32:40 - Committing [1|0|2|TRANSACTION|4]
-15:32:40 - Rebroadcasting... 7
-15:32:40 - Sending message [1|2|3|TRANSACTION|3]
-15:32:40 - Sending message [4|0||NAIVE_ASK_AMOUNT|3]
-15:32:40 - Got message [1|7|5|TRANSACTION|4]
-15:32:40 - Committing [1|7|5|TRANSACTION|4]
-15:32:40 - Committing [1|8|4|TRANSACTION|4]
-15:32:40 - Rebroadcasting... 8
-15:32:40 - Got message [1|4|5|TRANSACTION|4]
-15:32:40 - Committing [1|4|5|TRANSACTION|4]
-15:32:40 - Rebroadcasting... 9
-15:32:40 - Sending message [1|3|2|TRANSACTION|3]
-15:32:41 - Sending message [1|5|4|TRANSACTION|3]
-15:32:41 - Sending message [1|8|4|TRANSACTION|3]
-15:32:41 - Sending message [1|6|5|TRANSACTION|3]
-15:32:41 - Got message [0|6|2|TRANSACTION|4]
-15:32:41 - Rebroadcasting... 10
-15:32:41 - Got message [0|2|3|TRANSACTION|4]
-15:32:41 - Committing [0|2|3|TRANSACTION|4]
-15:32:41 - Rebroadcasting... 11
-15:32:41 - Got message [0|7|5|TRANSACTION|4]
-15:32:41 - Rebroadcasting... 12
-15:32:41 - Sending message [1|0|2|TRANSACTION|3]
-15:32:41 - Got message [0|8|4|TRANSACTION|4]
-15:32:41 - Rebroadcasting... 13
-15:32:41 - Got message [2|3|5|TRANSACTION|4]
-15:32:41 - Rebroadcasting... 14
-15:32:41 - Got message [0|1|4|TRANSACTION|4]
-15:32:41 - Committing [0|1|4|TRANSACTION|4]
-15:32:41 - Rebroadcasting... 15
-15:32:41 - Got message [0|4|4|TRANSACTION|4]
-15:32:41 - Committing [0|4|4|TRANSACTION|4]
-15:32:41 - Rebroadcasting... 16
-15:32:41 - Got message [2|6|1|TRANSACTION|4]
-15:32:41 - Rebroadcasting... 17
-15:32:41 - Sending message [1|1|2|TRANSACTION|3]
-15:32:41 - Got message [4|0||NAIVE_ASK_AMOUNT|4]
-15:32:41 - Got own message back. No rebroadcast.
-15:32:41 - Got message [2|1|4|TRANSACTION|4]
-15:32:41 - Committing [2|1|4|TRANSACTION|4]
-15:32:41 - Committing [2|3|5|TRANSACTION|4]
-15:32:41 - Rebroadcasting... 18
-15:32:41 - Sending message [1|7|5|TRANSACTION|3]
-15:32:41 - Got message [2|7|4|TRANSACTION|4]
-15:32:41 - Rebroadcasting... 19
-15:32:41 - Sending message [1|4|5|TRANSACTION|3]
-15:32:42 - Got message [2|8|3|TRANSACTION|4]
-15:32:42 - Rebroadcasting... 20
-15:32:42 - Got message [2|4|5|TRANSACTION|4]
-15:32:42 - Committing [2|4|5|TRANSACTION|4]
-15:32:42 - Rebroadcasting... 21
-15:32:42 - Got message [3|0|1000|NAIVE_TELL_AMOUNT|4]
-15:32:42 - Rebroadcasting... 22
-15:32:42 - Got message [0|5|2|TRANSACTION|4]
-15:32:42 - Committing [0|5|2|TRANSACTION|4]
-15:32:42 - Committing [0|6|2|TRANSACTION|4]
-15:32:42 - Committing [0|7|5|TRANSACTION|4]
-15:32:42 - Committing [0|8|4|TRANSACTION|4]
-15:32:42 - Committing [3|0|1000|NAIVE_TELL_AMOUNT|4]
-15:32:42 - Rebroadcasting... 23
-15:32:42 - Sending message [2|3|5|TRANSACTION|3]
-15:32:42 - Got message [0|0|3|TRANSACTION|4]
-15:32:42 - Committing [0|0|3|TRANSACTION|4]
-15:32:42 - Rebroadcasting... 24
-15:32:42 - Sending message [2|1|4|TRANSACTION|3]
-15:32:42 - Sending message [0|2|3|TRANSACTION|3]
-15:32:42 - Got message [2|2|3|TRANSACTION|4]
-15:32:42 - Committing [2|2|3|TRANSACTION|4]
-15:32:42 - Committing [2|6|1|TRANSACTION|4]
-15:32:42 - Committing [2|7|4|TRANSACTION|4]
-15:32:42 - Rebroadcasting... 25
-15:32:42 - Sending message [0|8|4|TRANSACTION|3]
-15:32:42 - Got message [2|0|3|TRANSACTION|4]
-15:32:42 - Committing [2|0|3|TRANSACTION|4]
-15:32:42 - Rebroadcasting... 26
-15:32:42 - Got message [2|5|5|TRANSACTION|4]
-15:32:42 - Committing [2|5|5|TRANSACTION|4]
-15:32:42 - Committing [2|8|3|TRANSACTION|4]
-15:32:42 - Rebroadcasting... 27
-15:32:42 - Sending message [0|7|5|TRANSACTION|3]
-15:32:42 - Got message [0|3|4|TRANSACTION|4]
-15:32:42 - Committing [0|3|4|TRANSACTION|4]
-15:32:42 - Rebroadcasting... 28
-15:32:42 - Sending message [0|6|2|TRANSACTION|3]
-15:32:42 - Sending message [0|4|4|TRANSACTION|3]
-15:32:42 - Sending message [0|1|4|TRANSACTION|3]
-15:32:42 - Sending message [2|7|4|TRANSACTION|3]
-15:32:43 - Sending message [2|6|1|TRANSACTION|3]
-15:32:43 - Sending message [2|4|5|TRANSACTION|3]
-15:32:43 - Sending message [0|5|2|TRANSACTION|3]
-15:32:43 - Sending message [2|8|3|TRANSACTION|3]
-15:32:43 - Sending message [3|0|1000|NAIVE_TELL_AMOUNT|3]
-15:32:43 - Sending message [0|0|3|TRANSACTION|3]
-15:32:43 - Sending message [2|2|3|TRANSACTION|3]
-15:32:43 - Sending message [2|5|5|TRANSACTION|3]
-15:32:43 - Got message [1|9|973|NAIVE_TELL_AMOUNT|4]
-15:32:43 - Committing [1|9|973|NAIVE_TELL_AMOUNT|4]
-15:32:43 - Rebroadcasting... 29
-15:32:43 - Got message [2|9|983|NAIVE_TELL_AMOUNT|4]
-15:32:43 - Committing [2|9|983|NAIVE_TELL_AMOUNT|4]
-15:32:43 - Rebroadcasting... 30
-15:32:43 - Sending message [2|0|3|TRANSACTION|3]
-15:32:43 - Sending message [0|3|4|TRANSACTION|3]
-15:32:44 - Sending message [2|9|983|NAIVE_TELL_AMOUNT|3]
-15:32:45 - Sending message [1|9|973|NAIVE_TELL_AMOUNT|3]
-15:32:45 - Got message [0|9|987|NAIVE_TELL_AMOUNT|4]
-15:32:45 - Committing [0|9|987|NAIVE_TELL_AMOUNT|4]
-15:32:45 - Rebroadcasting... 31
-15:32:45 - Sending message [0|9|987|NAIVE_TELL_AMOUNT|3]
-15:32:47 - Info for node4 = 1003 bitcake
-15:32:47 - Info for node2 = 983 bitcake
-15:32:47 - Info for node3 = 1000 bitcake
-15:32:47 - Info for node0 = 987 bitcake
-15:32:47 - Info for node1 = 973 bitcake
-15:32:47 - System bitcake count: 4946
-15:32:53 - Start collecting bitcake_info
-15:32:53 - Pausing for 15000 ms
-15:32:54 - Sending message [4|1||NAIVE_ASK_AMOUNT|3]
-15:32:55 - Got message [3|1|1007|NAIVE_TELL_AMOUNT|4]
-15:32:55 - Committing [3|1|1007|NAIVE_TELL_AMOUNT|4]
-15:32:55 - Rebroadcasting... 32
-15:32:55 - Got message [4|1||NAIVE_ASK_AMOUNT|4]
-15:32:55 - Got own message back. No rebroadcast.
-15:32:56 - Sending message [3|1|1007|NAIVE_TELL_AMOUNT|3]
-15:32:57 - Got message [2|10|983|NAIVE_TELL_AMOUNT|4]
-15:32:57 - Committing [2|10|983|NAIVE_TELL_AMOUNT|4]
-15:32:57 - Rebroadcasting... 33
-15:32:57 - Got message [1|10|978|NAIVE_TELL_AMOUNT|4]
-15:32:57 - Committing [1|10|978|NAIVE_TELL_AMOUNT|4]
-15:32:57 - Rebroadcasting... 34
-15:32:57 - Sending message [2|10|983|NAIVE_TELL_AMOUNT|3]
-15:32:58 - Sending message [1|10|978|NAIVE_TELL_AMOUNT|3]
-15:32:59 - Got message [0|10|987|NAIVE_TELL_AMOUNT|4]
-15:32:59 - Committing [0|10|987|NAIVE_TELL_AMOUNT|4]
-15:32:59 - Rebroadcasting... 35
-15:33:01 - Sending message [0|10|987|NAIVE_TELL_AMOUNT|3]
-15:33:01 - Info for node4 = 1045 bitcake
-15:33:01 - Info for node2 = 983 bitcake
-15:33:01 - Info for node3 = 1007 bitcake
-15:33:01 - Info for node0 = 987 bitcake
-15:33:01 - Info for node1 = 978 bitcake
-15:33:01 - System bitcake count: 5000
-15:33:08 - {0=11, 1=11, 2=11, 3=2, 4=2}
-15:33:08 - 1045
-15:33:08 - Stopping...
+19:05:48 - Starting servent [4|localhost|1500]
+19:05:48 - Pausing for 1000 ms
+19:05:49 - Start collecting bitcake_info
+19:05:49 - Pausing for 14000 ms
+19:05:50 - Got message [1|4|3|TRANSACTION|4]
+19:05:50 - Rebroadcasting... 1
+19:05:50 - Got message [1|8|4|TRANSACTION|4]
+19:05:50 - Rebroadcasting... 2
+19:05:50 - Got message [1|1|5|TRANSACTION|4]
+19:05:50 - Committing [1|1|5|TRANSACTION|4]
+19:05:50 - Rebroadcasting... 3
+19:05:50 - Got message [1|6|3|TRANSACTION|4]
+19:05:50 - Rebroadcasting... 4
+19:05:51 - Got message [1|3|5|TRANSACTION|4]
+19:05:51 - Rebroadcasting... 5
+19:05:51 - Got message [1|7|4|TRANSACTION|4]
+19:05:51 - Rebroadcasting... 6
+19:05:51 - Sending message [1|4|3|TRANSACTION|3]
+19:05:51 - Got message [1|2|2|TRANSACTION|4]
+19:05:51 - Committing [1|2|2|TRANSACTION|4]
+19:05:51 - Rebroadcasting... 7
+19:05:51 - Sending message [1|8|4|TRANSACTION|3]
+19:05:51 - Sending message [1|1|5|TRANSACTION|3]
+19:05:51 - Got message [1|0|5|TRANSACTION|4]
+19:05:51 - Committing [1|0|5|TRANSACTION|4]
+19:05:51 - Committing [1|4|3|TRANSACTION|4]
+19:05:51 - Committing [1|3|5|TRANSACTION|4]
+19:05:51 - Committing [1|6|3|TRANSACTION|4]
+19:05:51 - Committing [1|8|4|TRANSACTION|4]
+19:05:51 - Committing [1|7|4|TRANSACTION|4]
+19:05:51 - Rebroadcasting... 8
+19:05:51 - Sending message [1|3|5|TRANSACTION|3]
+19:05:51 - Got message [1|5|3|TRANSACTION|4]
+19:05:51 - Committing [1|5|3|TRANSACTION|4]
+19:05:51 - Rebroadcasting... 9
+19:05:51 - Got message [0|6|1|TRANSACTION|4]
+19:05:51 - Rebroadcasting... 10
+19:05:51 - Got message [0|0|1|TRANSACTION|4]
+19:05:51 - Committing [0|0|1|TRANSACTION|4]
+19:05:51 - Rebroadcasting... 11
+19:05:52 - Got message [2|6|5|TRANSACTION|4]
+19:05:52 - Rebroadcasting... 12
+19:05:52 - Sending message [1|6|3|TRANSACTION|3]
+19:05:52 - Sending message [4|0||NAIVE_ASK_AMOUNT|3]
+19:05:52 - Sending message [1|7|4|TRANSACTION|3]
+19:05:52 - Got message [0|2|2|TRANSACTION|4]
+19:05:52 - Committing [0|2|2|TRANSACTION|4]
+19:05:52 - Rebroadcasting... 13
+19:05:52 - Sending message [1|2|2|TRANSACTION|3]
+19:05:52 - Got message [2|0|1|TRANSACTION|4]
+19:05:52 - Committing [2|0|1|TRANSACTION|4]
+19:05:52 - Rebroadcasting... 14
+19:05:52 - Got message [0|4|1|TRANSACTION|4]
+19:05:52 - Committing [0|4|1|TRANSACTION|4]
+19:05:52 - Rebroadcasting... 15
+19:05:52 - Got message [2|1|4|TRANSACTION|4]
+19:05:52 - Committing [2|1|4|TRANSACTION|4]
+19:05:52 - Rebroadcasting... 16
+19:05:52 - Got message [2|5|1|TRANSACTION|4]
+19:05:52 - Rebroadcasting... 17
+19:05:52 - Got message [2|7|5|TRANSACTION|4]
+19:05:52 - Rebroadcasting... 18
+19:05:52 - Sending message [1|0|5|TRANSACTION|3]
+19:05:52 - Sending message [1|5|3|TRANSACTION|3]
+19:05:52 - Got message [0|7|4|TRANSACTION|4]
+19:05:52 - Rebroadcasting... 19
+19:05:52 - Sending message [0|0|1|TRANSACTION|3]
+19:05:52 - Got message [0|1|1|TRANSACTION|4]
+19:05:52 - Committing [0|1|1|TRANSACTION|4]
+19:05:52 - Committing [0|6|1|TRANSACTION|4]
+19:05:52 - Committing [0|7|4|TRANSACTION|4]
+19:05:52 - Rebroadcasting... 20
+19:05:52 - Got message [0|3|1|TRANSACTION|4]
+19:05:52 - Committing [0|3|1|TRANSACTION|4]
+19:05:52 - Rebroadcasting... 21
+19:05:52 - Got message [2|3|3|TRANSACTION|4]
+19:05:52 - Committing [2|3|3|TRANSACTION|4]
+19:05:52 - Committing [2|5|1|TRANSACTION|4]
+19:05:52 - Rebroadcasting... 22
+19:05:53 - Got message [0|5|4|TRANSACTION|4]
+19:05:53 - Committing [0|5|4|TRANSACTION|4]
+19:05:53 - Rebroadcasting... 23
+19:05:53 - Got message [3|0|1007|NAIVE_TELL_AMOUNT|4]
+19:05:53 - Committing [3|0|1007|NAIVE_TELL_AMOUNT|4]
+19:05:53 - Rebroadcasting... 24
+19:05:53 - Sending message [0|6|1|TRANSACTION|3]
+19:05:53 - Got message [4|0||NAIVE_ASK_AMOUNT|4]
+19:05:53 - Got own message back. No rebroadcast.
+19:05:53 - Got message [2|8|3|TRANSACTION|4]
+19:05:53 - Rebroadcasting... 25
+19:05:53 - Got message [2|4|2|TRANSACTION|4]
+19:05:53 - Committing [2|4|2|TRANSACTION|4]
+19:05:53 - Committing [2|6|5|TRANSACTION|4]
+19:05:53 - Committing [2|7|5|TRANSACTION|4]
+19:05:53 - Committing [2|8|3|TRANSACTION|4]
+19:05:53 - Rebroadcasting... 26
+19:05:53 - Got message [0|8|2|TRANSACTION|4]
+19:05:53 - Committing [0|8|2|TRANSACTION|4]
+19:05:53 - Rebroadcasting... 27
+19:05:53 - Sending message [2|1|4|TRANSACTION|3]
+19:05:53 - Got message [2|2|3|TRANSACTION|4]
+19:05:53 - Committing [2|2|3|TRANSACTION|4]
+19:05:53 - Rebroadcasting... 28
+19:05:53 - Sending message [0|2|2|TRANSACTION|3]
+19:05:53 - Sending message [0|7|4|TRANSACTION|3]
+19:05:53 - Sending message [2|6|5|TRANSACTION|3]
+19:05:53 - Sending message [0|4|1|TRANSACTION|3]
+19:05:53 - Sending message [0|5|4|TRANSACTION|3]
+19:05:53 - Sending message [3|0|1007|NAIVE_TELL_AMOUNT|3]
+19:05:53 - Sending message [2|3|3|TRANSACTION|3]
+19:05:53 - Sending message [2|5|1|TRANSACTION|3]
+19:05:53 - Sending message [0|8|2|TRANSACTION|3]
+19:05:53 - Sending message [2|0|1|TRANSACTION|3]
+19:05:54 - Sending message [2|7|5|TRANSACTION|3]
+19:05:54 - Sending message [0|3|1|TRANSACTION|3]
+19:05:54 - Sending message [0|1|1|TRANSACTION|3]
+19:05:54 - Sending message [2|8|3|TRANSACTION|3]
+19:05:54 - Got message [1|9|970|NAIVE_TELL_AMOUNT|4]
+19:05:54 - Committing [1|9|970|NAIVE_TELL_AMOUNT|4]
+19:05:54 - Rebroadcasting... 29
+19:05:54 - Sending message [2|2|3|TRANSACTION|3]
+19:05:54 - Sending message [2|4|2|TRANSACTION|3]
+19:05:54 - Got message [2|9|989|NAIVE_TELL_AMOUNT|4]
+19:05:54 - Committing [2|9|989|NAIVE_TELL_AMOUNT|4]
+19:05:54 - Rebroadcasting... 30
+19:05:55 - Sending message [1|9|970|NAIVE_TELL_AMOUNT|3]
+19:05:56 - Sending message [2|9|989|NAIVE_TELL_AMOUNT|3]
+19:05:56 - Got message [0|9|999|NAIVE_TELL_AMOUNT|4]
+19:05:56 - Committing [0|9|999|NAIVE_TELL_AMOUNT|4]
+19:05:56 - Rebroadcasting... 31
+19:05:57 - Info for node4 = 1000 bitcake
+19:05:57 - Info for node2 = 989 bitcake
+19:05:57 - Info for node3 = 1007 bitcake
+19:05:57 - Info for node0 = 999 bitcake
+19:05:57 - Info for node1 = 970 bitcake
+19:05:57 - System bitcake count: 4965
+19:05:57 - Sending message [0|9|999|NAIVE_TELL_AMOUNT|3]
+19:06:03 - Start collecting bitcake_info
+19:06:03 - Pausing for 15000 ms
+19:06:04 - Sending message [4|1||NAIVE_ASK_AMOUNT|3]
+19:06:05 - Got message [4|1||NAIVE_ASK_AMOUNT|4]
+19:06:05 - Got own message back. No rebroadcast.
+19:06:05 - Got message [3|1|1007|NAIVE_TELL_AMOUNT|4]
+19:06:05 - Committing [3|1|1007|NAIVE_TELL_AMOUNT|4]
+19:06:05 - Rebroadcasting... 32
+19:06:06 - Sending message [3|1|1007|NAIVE_TELL_AMOUNT|3]
+19:06:07 - Got message [2|10|989|NAIVE_TELL_AMOUNT|4]
+19:06:07 - Committing [2|10|989|NAIVE_TELL_AMOUNT|4]
+19:06:07 - Rebroadcasting... 33
+19:06:08 - Got message [1|10|977|NAIVE_TELL_AMOUNT|4]
+19:06:08 - Committing [1|10|977|NAIVE_TELL_AMOUNT|4]
+19:06:08 - Rebroadcasting... 34
+19:06:08 - Sending message [2|10|989|NAIVE_TELL_AMOUNT|3]
+19:06:09 - Got message [0|10|999|NAIVE_TELL_AMOUNT|4]
+19:06:09 - Committing [0|10|999|NAIVE_TELL_AMOUNT|4]
+19:06:09 - Rebroadcasting... 35
+19:06:09 - Sending message [1|10|977|NAIVE_TELL_AMOUNT|3]
+19:06:10 - Sending message [0|10|999|NAIVE_TELL_AMOUNT|3]
+19:06:10 - Info for node4 = 1028 bitcake
+19:06:10 - Info for node2 = 989 bitcake
+19:06:10 - Info for node3 = 1007 bitcake
+19:06:10 - Info for node0 = 999 bitcake
+19:06:10 - Info for node1 = 977 bitcake
+19:06:10 - System bitcake count: 5000
+19:06:18 - {0=11, 1=11, 2=11, 3=2, 4=2}
+19:06:18 - 1028
+19:06:18 - Stopping...

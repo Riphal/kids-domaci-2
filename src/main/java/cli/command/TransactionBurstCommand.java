@@ -4,6 +4,7 @@ import app.AppConfig;
 import app.CausalBroadcastShared;
 import app.ServentInfo;
 
+import app.snapshot_bitcake.AcharyaBadrinathManager;
 import app.snapshot_bitcake.SnapshotCollector;
 import servent.message.Message;
 import servent.message.TransactionMessage;
@@ -14,8 +15,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class TransactionBurstCommand implements CLICommand {
 
-	private static final int TRANSACTION_COUNT = 3;
-	private static final int BURST_WORKERS = 3;
+	private static final int TRANSACTION_COUNT = 2;
+	private static final int BURST_WORKERS = 1;
 	private static final int MAX_TRANSFER_AMOUNT = 5;
 	
 	private final SnapshotCollector snapshotCollector;
@@ -56,6 +57,10 @@ public class TransactionBurstCommand implements CLICommand {
 
 				// reduce our bitcake count then send the message
 				transactionMessage.sendEffect();
+
+				if (snapshotCollector.getBitcakeManager() instanceof AcharyaBadrinathManager) {
+					CausalBroadcastShared.addSendTransaction(transactionMessage);
+				}
 
 				CausalBroadcastShared.commitCausalMessage(transactionMessage);
 			}

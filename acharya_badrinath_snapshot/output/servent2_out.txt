@@ -1,0 +1,118 @@
+21:17:43 - Starting servent [2|localhost|1300]
+21:17:43 - Pausing for 2000 ms
+21:17:45 - Got message [1|1|3|TRANSACTION|3]
+21:17:45 - Rebroadcasting... 1
+21:17:45 - Got message [0|0|2|TRANSACTION|3]
+21:17:45 - Committing [0|0|2|TRANSACTION|3]
+21:17:45 - Rebroadcasting... 2
+21:17:45 - Got message [0|1|5|TRANSACTION|1]
+21:17:45 - Committing [0|1|5|TRANSACTION|1]
+21:17:45 - Rebroadcasting... 3
+21:17:45 - Pausing for 28000 ms
+21:17:45 - Committing [2|0|4|TRANSACTION|1]
+21:17:45 - Committing [2|1|2|TRANSACTION|1]
+21:17:45 - Got message [1|0|5|TRANSACTION|4]
+21:17:45 - Committing [1|0|5|TRANSACTION|4]
+21:17:45 - Committing [1|1|3|TRANSACTION|3]
+21:17:45 - Rebroadcasting... 4
+21:17:45 - Got message [1|0|5|TRANSACTION|4]
+21:17:45 - Already had this. No rebroadcast.
+21:17:45 - Sending message [2|1|2|TRANSACTION|1]
+21:17:45 - Sending message [1|1|3|TRANSACTION|3]
+21:17:45 - Sending message [1|1|3|TRANSACTION|3]
+21:17:45 - Sending message [2|1|2|TRANSACTION|1]
+21:17:46 - Sending message [0|1|5|TRANSACTION|1]
+21:17:46 - Got message [1|1|3|TRANSACTION|3]
+21:17:46 - Already had this. No rebroadcast.
+21:17:46 - Sending message [1|0|5|TRANSACTION|4]
+21:17:46 - Sending message [0|1|5|TRANSACTION|1]
+21:17:46 - Sending message [0|0|2|TRANSACTION|3]
+21:17:46 - Sending message [2|0|4|TRANSACTION|1]
+21:17:46 - Sending message [2|0|4|TRANSACTION|1]
+21:17:46 - Sending message [0|0|2|TRANSACTION|3]
+21:17:46 - Sending message [1|0|5|TRANSACTION|4]
+21:17:47 - Got message [2|1|2|TRANSACTION|1]
+21:17:47 - Got own message back. No rebroadcast.
+21:17:47 - Got message [0|1|5|TRANSACTION|1]
+21:17:47 - Already had this. No rebroadcast.
+21:17:47 - Got message [0|0|2|TRANSACTION|3]
+21:17:47 - Already had this. No rebroadcast.
+21:17:47 - Got message [2|1|2|TRANSACTION|1]
+21:17:47 - Got own message back. No rebroadcast.
+21:17:47 - Got message [2|0|4|TRANSACTION|1]
+21:17:47 - Got own message back. No rebroadcast.
+21:17:47 - Got message [2|0|4|TRANSACTION|1]
+21:17:47 - Got own message back. No rebroadcast.
+21:17:47 - Got message [3|0|1005|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:47 - Rebroadcasting... 5
+21:17:47 - Got message [4|0||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+21:17:47 - Committing [4|0||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+21:17:47 - Committing [3|0|1005|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:47 - Rebroadcasting... 6
+21:17:47 - Committing [2|2|994|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:48 - Sending message [3|0|1005|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:48 - Sending message [4|0||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+21:17:48 - Sending message [3|0|1005|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:48 - Sending message [4|0||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+21:17:48 - Got message [3|0|1005|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:48 - Already had this. No rebroadcast.
+21:17:48 - Sending message [2|2|994|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:48 - Got message [1|2|1003|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:48 - Committing [1|2|1003|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:48 - Rebroadcasting... 7
+21:17:49 - Sending message [2|2|994|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:49 - Got message [4|0||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+21:17:49 - Already had this. No rebroadcast.
+21:17:49 - Got message [1|2|1003|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:49 - Already had this. No rebroadcast.
+21:17:49 - Sending message [1|2|1003|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:49 - Got message [0|2|993|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:49 - Committing [0|2|993|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:49 - Rebroadcasting... 8
+21:17:49 - Got message [2|2|994|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:49 - Got own message back. No rebroadcast.
+21:17:49 - Got message [2|2|994|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:49 - Got own message back. No rebroadcast.
+21:17:50 - Sending message [1|2|1003|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:50 - Sending message [0|2|993|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:50 - Got message [0|2|993|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:50 - Already had this. No rebroadcast.
+21:17:50 - Sending message [0|2|993|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:59 - Got message [3|1|1005|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:17:59 - Rebroadcasting... 9
+21:18:00 - Got message [4|1||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+21:18:00 - Committing [4|1||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+21:18:00 - Committing [3|1|1005|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:00 - Committing [2|3|994|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:00 - Rebroadcasting... 10
+21:18:01 - Sending message [3|1|1005|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:01 - Sending message [3|1|1005|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:01 - Sending message [2|3|994|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:01 - Sending message [4|1||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+21:18:01 - Got message [3|1|1005|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:01 - Already had this. No rebroadcast.
+21:18:01 - Sending message [4|1||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+21:18:01 - Got message [1|3|1003|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:01 - Committing [1|3|1003|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:01 - Rebroadcasting... 11
+21:18:01 - Sending message [2|3|994|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:02 - Got message [0|3|993|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:02 - Committing [0|3|993|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:02 - Rebroadcasting... 12
+21:18:02 - Got message [4|1||ACHARYA_BADRINATH_ASK_AMOUNT|null]
+21:18:02 - Already had this. No rebroadcast.
+21:18:02 - Got message [2|3|994|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:02 - Got own message back. No rebroadcast.
+21:18:02 - Got message [1|3|1003|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:02 - Already had this. No rebroadcast.
+21:18:02 - Got message [2|3|994|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:02 - Got own message back. No rebroadcast.
+21:18:03 - Sending message [1|3|1003|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:03 - Sending message [1|3|1003|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:03 - Sending message [0|3|993|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:03 - Sending message [0|3|993|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:03 - Got message [0|3|993|ACHARYA_BADRINATH_TELL_AMOUNT|4]
+21:18:03 - Already had this. No rebroadcast.
+21:18:13 - {0=4, 1=4, 2=4, 3=2, 4=2}
+21:18:13 - 994
+21:18:13 - Stopping...
