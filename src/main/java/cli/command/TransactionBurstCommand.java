@@ -31,6 +31,7 @@ public class TransactionBurstCommand implements CLICommand {
 			for (int i = 0; i < TRANSACTION_COUNT; i++) {
 				ServentInfo receiverInfo = AppConfig.getInfoById((int)(Math.random() * AppConfig.getServentCount()));
 
+				// Check if receiverInfo is myServentInfo, if so find another receiverInfo because we can't send a transaction to ourselves
 				while (receiverInfo.getId() == AppConfig.myServentInfo.getId()) {
 					receiverInfo = AppConfig.getInfoById((int)(Math.random() * AppConfig.getServentCount()));
 				}
