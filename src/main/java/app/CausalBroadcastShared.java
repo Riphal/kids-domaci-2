@@ -117,13 +117,13 @@ public class CausalBroadcastShared {
 
 	public static void checkPendingMessages() {
 		boolean gotWork = true;
-		
+
 		while (gotWork) {
 			gotWork = false;
-			
+
 			synchronized (pendingMessagesLock) {
 				Iterator<Message> iterator = pendingMessages.iterator();
-				
+
 				Map<Integer, Integer> myVectorClock = getVectorClock();
 				while (iterator.hasNext()) {
 					Message pendingMessage = iterator.next();
@@ -174,13 +174,12 @@ public class CausalBroadcastShared {
 						threadPool.submit(messageHandler);
 
 						iterator.remove();
-						
 						break;
 					}
 				}
 			}
 		}
-		
+
 	}
 
 }

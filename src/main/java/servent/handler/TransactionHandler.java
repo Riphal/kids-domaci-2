@@ -30,11 +30,11 @@ public class TransactionHandler implements MessageHandler {
 				return;
 			}
 
+			bitcakeManager.addSomeBitcakes(amountNumber);
+
 			if (bitcakeManager instanceof AcharyaBadrinathManager) {
 				CausalBroadcastShared.addReceivedTransaction(clientMessage);
 			}
-
-			bitcakeManager.addSomeBitcakes(amountNumber);
 		} else {
 			AppConfig.timestampedErrorPrint("Transaction handler got: " + clientMessage);
 		}

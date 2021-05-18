@@ -118,7 +118,8 @@ public class BasicMessage implements Message {
 		
 		List<ServentInfo> newRouteList = new ArrayList<>(routeList);
 		newRouteList.add(newRouteItem);
-		Message toReturn = new BasicMessage(getMessageType(), getOriginalSenderInfo(), getOriginalReceiverInfo(),
+		Message toReturn = new BasicMessage(getMessageType(),
+				getOriginalSenderInfo(), getOriginalReceiverInfo(),
 				getReceiverInfo(), getSenderVectorClock(),
 				newRouteList, getMessageText(), getMessageId());
 		
@@ -134,7 +135,8 @@ public class BasicMessage implements Message {
 		if (AppConfig.myServentInfo.getNeighbors().contains(newReceiverId)) {
 			ServentInfo newReceiverInfo = AppConfig.getInfoById(newReceiverId);
 
-			Message toReturn = new BasicMessage(getMessageType(), getOriginalSenderInfo(), getOriginalReceiverInfo(),
+			Message toReturn = new BasicMessage(getMessageType(),
+					getOriginalSenderInfo(), getOriginalReceiverInfo(),
 					newReceiverInfo, getSenderVectorClock(),
 					getRoute(), getMessageText(), getMessageId());
 

@@ -23,8 +23,8 @@ public class AcharyaBadrinathTellAmountMessage extends BasicMessage {
                                              List<Message> sendTransactions, List<Message> receivedTransactions) {
         super(MessageType.ACHARYA_BADRINATH_TELL_AMOUNT, sender, receiver, neighbor, senderVectorClock, String.valueOf(amount));
 
-        this.sendTransactions = sendTransactions;
-        this.receivedTransactions = receivedTransactions;
+        this.sendTransactions = new CopyOnWriteArrayList<>(sendTransactions);
+        this.receivedTransactions = new CopyOnWriteArrayList<>(receivedTransactions);
     }
 
     protected AcharyaBadrinathTellAmountMessage(MessageType type, ServentInfo originalSenderInfo, ServentInfo originalReceiverInfo,
@@ -57,7 +57,8 @@ public class AcharyaBadrinathTellAmountMessage extends BasicMessage {
 
         List<ServentInfo> newRouteList = new ArrayList<>(getRoute());
         newRouteList.add(newRouteItem);
-        Message toReturn = new AcharyaBadrinathTellAmountMessage(getMessageType(), getOriginalSenderInfo(), getOriginalReceiverInfo(),
+        Message toReturn = new AcharyaBadrinathTellAmountMessage(getMessageType(),
+                getOriginalSenderInfo(), getOriginalReceiverInfo(),
                 getReceiverInfo(), getSenderVectorClock(),
                 newRouteList, getMessageText(), getMessageId(),
                 getSendTransactions(), getReceivedTransactions()
@@ -75,7 +76,8 @@ public class AcharyaBadrinathTellAmountMessage extends BasicMessage {
         if (AppConfig.myServentInfo.getNeighbors().contains(newReceiverId)) {
             ServentInfo newReceiverInfo = AppConfig.getInfoById(newReceiverId);
 
-            Message toReturn = new AcharyaBadrinathTellAmountMessage(getMessageType(), getOriginalSenderInfo(), getOriginalReceiverInfo(),
+            Message toReturn = new AcharyaBadrinathTellAmountMessage(getMessageType(),
+                    getOriginalSenderInfo(), getOriginalReceiverInfo(),
                     newReceiverInfo, getSenderVectorClock(),
                     getRoute(), getMessageText(), getMessageId(),
                     getSendTransactions(), getReceivedTransactions()

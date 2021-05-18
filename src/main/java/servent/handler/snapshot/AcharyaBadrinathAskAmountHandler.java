@@ -38,12 +38,12 @@ public class AcharyaBadrinathAskAmountHandler implements MessageHandler {
                     CausalBroadcastShared.getReceivedTransactions()
             );
 
+            CausalBroadcastShared.commitCausalMessage(tellMessage);
+
             for (int neighbor : AppConfig.myServentInfo.getNeighbors()) {
                 //Same message, different receiver, and add us to the route table.
                 MessageUtil.sendMessage(tellMessage.changeReceiver(neighbor).makeMeASender());
             }
-
-            CausalBroadcastShared.commitCausalMessage(tellMessage);
         } else {
             AppConfig.timestampedErrorPrint("Ask amount handler got: " + clientMessage);
         }

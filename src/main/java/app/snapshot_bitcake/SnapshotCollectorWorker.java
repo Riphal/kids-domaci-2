@@ -103,7 +103,7 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 				collectedNaiveValues.put("node"+AppConfig.myServentInfo.getId(), bitcakeManager.getCurrentBitcakeAmount());
 
 				// Increment clock for original sender
-				CausalBroadcastShared.incrementClock(AppConfig.myServentInfo.getId());
+				CausalBroadcastShared.commitCausalMessage(askMessage);
 
 				break;
 
@@ -123,7 +123,6 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 					MessageUtil.sendMessage(askMessage);
 				}
 
-
 				addAcharyaBadrinathSnapshotInfo(
 					"node"+AppConfig.myServentInfo.getId(),
 					bitcakeManager.getCurrentBitcakeAmount(),
@@ -132,7 +131,7 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 				);
 
 				// Increment clock for original sender
-				CausalBroadcastShared.incrementClock(AppConfig.myServentInfo.getId());
+				CausalBroadcastShared.commitCausalMessage(askMessage);
 				break;
 
 			case NONE:
@@ -207,7 +206,11 @@ public class SnapshotCollectorWorker implements SnapshotCollector {
 
 						boolean exist = false;
 						for (Message receivedTransaction : receivedTransactions) {
-							if (sendTransaction.getMessageId() == receivedTransaction.getMessageId()) {
+							if (
+								sendTransaction.getMessageId() == receivedTransaction.getMessageId() &&
+								sendTransaction.getOriginalSenderInfo().getId() == receivedTransaction.getOriginalSenderInfo().getId() &&
+								sendTransaction.getOriginalReceiverInfo().getId() == receivedTransaction.getOriginalReceiverInfo().getId()
+							) {
 								exist = true;
 								break;
 							}
